@@ -4,32 +4,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>yygh_parent</artifactId>
-<<<<<<< HEAD
         <groupId>com.strix</groupId>
-=======
-        <groupId>com.chuan</groupId>
->>>>>>> f8b14c31f4a7b39af785028e5f042068da9fa875
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>service</artifactId>
     <packaging>pom</packaging>
-
+    <modules>
+        <module>service-hosp</module>
+    </modules>
     <dependencies>
-<<<<<<< HEAD
-<!--        <dependency>-->
-<!--            <groupId>com.atguigu.yygh</groupId>-->
-<!--            <artifactId>service-util</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.atguigu.yygh</groupId>-->
-<!--            <artifactId>model</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-=======
->>>>>>> f8b14c31f4a7b39af785028e5f042068da9fa875
+        <dependency>
+            <groupId>com.strix</groupId>
+            <artifactId>model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.strix</groupId>
+            <artifactId>service-util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!--web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -39,6 +34,11 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+            <version>3.3.1</version>
         </dependency>
         <!--mysql-->
         <dependency>
@@ -51,7 +51,6 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
-<<<<<<< HEAD
 <!--        &lt;!&ndash; 服务调用feign &ndash;&gt;-->
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.cloud</groupId>-->
@@ -63,27 +62,10 @@
 <!--            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
 <!--        </dependency>-->
 <!--        &lt;!&ndash; 流量控制 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>-->
-<!--        </dependency>-->
-=======
-        <!-- 服务调用feign -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-        <!-- 服务注册 -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-        <!-- 流量控制 -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-        </dependency>
->>>>>>> f8b14c31f4a7b39af785028e5f042068da9fa875
+<!--        &lt;!&ndash; <dependency>-->
+<!--             <groupId>com.alibaba.cloud</groupId>-->
+<!--             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>-->
+<!--         </dependency>&ndash;&gt;-->
     </dependencies>
     <build>
         <plugins>
@@ -112,8 +94,5 @@
             </resource>
         </resources>
     </build>
-</project>
-<<<<<<< HEAD
-=======
 
->>>>>>> f8b14c31f4a7b39af785028e5f042068da9fa875
+</project>

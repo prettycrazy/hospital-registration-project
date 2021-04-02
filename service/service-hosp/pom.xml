@@ -3,17 +3,37 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>yygh_parent</artifactId>
+        <artifactId>service</artifactId>
         <groupId>com.strix</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service-hosp</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>service_hosp</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.strix</groupId>
+            <artifactId>service-util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-mongodb</artifactId>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>com.strix</groupId>-->
+<!--            <artifactId>service_cmn_client</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>com.strix</groupId>-->
+<!--            <artifactId>rabbit_util</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+
     </dependencies>
 
     <build>
@@ -25,6 +45,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
-
