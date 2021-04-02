@@ -4,7 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>yygh_parent</artifactId>
+<<<<<<< HEAD
         <groupId>com.strix</groupId>
+=======
+        <groupId>com.chuan</groupId>
+>>>>>>> f8b14c31f4a7b39af785028e5f042068da9fa875
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -45,4 +49,10 @@
             <scope>provided </scope>
         </dependency>
     </dependencies>
+<<<<<<< HEAD
 </project>
+=======
+
+
+</project>
+>>>>>>> f8b14c31f4a7b39af785028e5f042068da9fa875
