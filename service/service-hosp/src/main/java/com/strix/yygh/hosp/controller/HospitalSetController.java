@@ -9,14 +9,17 @@ import com.strix.yygh.model.hosp.Hospital;
 import com.strix.yygh.model.hosp.HospitalSet;
 import com.strix.yygh.hosp.service.HospitalSetService;
 import com.strix.yygh.vo.hosp.HospitalSetQueryVo;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Random;
 
+@Api(tags = "医院设置管理")
 @RestController
 @RequestMapping("/admin/hosp/hospitalSet")
+@CrossOrigin
 public class HospitalSetController {
 
     @Autowired
@@ -44,7 +47,7 @@ public class HospitalSetController {
 
 
 //    3条件查询带分页
-    @PostMapping("findPage/{current}/{limit}")
+    @PostMapping("findPageHospSet/{current}/{limit}")
     public Result findPageHospSet(@PathVariable long current,
                                   @PathVariable long limit,
                                   @RequestBody(required = false) HospitalSetQueryVo hospitalSetQueryVo){
@@ -71,7 +74,7 @@ public class HospitalSetController {
 
 
 //    4添加医院设置
-    @PostMapping
+    @PostMapping("saveHospitalSet")
     public Result saveHospitalSet(@RequestBody HospitalSet hospitalSet){
 //        设定状态为1
         hospitalSet.setStatus(1);
